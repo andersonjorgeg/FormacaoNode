@@ -31,6 +31,16 @@ app.get('/ola/:nome/:empresa', (req, res) => {
   res.send(`<h1>Oi ${nome} do ${empresa}</h1>`)
 })
 
+app.get('/canal/youtube', (req, res) => {
+  let canal = req.query['canal']
+
+  if(canal){
+    res.send(`<h1>Nome do canal ${canal}</h1>`)
+  } else {
+    res.send('<h1>Nenhum canal fornecido</h1>')
+  }
+})
+
 //criando um servidor com express
 app.listen(3000, (err) => {
   if(err){
