@@ -41,7 +41,7 @@ app.get('/canal/youtube', (req, res) => {
   }
 })
 
-//criando um servidor com express
+// Inicia o servidor na porta 3000 e configura uma função de callback para tratar possíveis erros
 app.listen(3000, (err) => {
   if(err){
     console.log('Ocorreu um erro')
