@@ -44,13 +44,9 @@ class Cachorro extends Animal {
   }
 }
 
-let dog = new Cachorro("Dogão", 5, 250, "pitbull", "20kg");
+let dog = new Cachorro("Dogão", 5, "R$250", "Pitbull", "20Kg");
 
 dog.ChecarEstoque();
 dog.Latir();
 dog.MetodoQualquer();
-console.log(dog.nome);
-console.log(dog.idade);
-console.log(dog.preco);
-console.log(dog.raca);
-console.log(dog.peso);
+console.log(dog);

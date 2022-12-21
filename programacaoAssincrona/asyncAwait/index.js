@@ -42,12 +42,15 @@ function pegarUsuarios() {
   }); 
 };
 
-// async/await é bloqueante.
+// Declaração de uma função assíncrona chamada principal
 async function principal(){
+  // Declaração de uma variável chamada usuários e atribuição do resultado da chamada da função pegarUsuarios, que é uma função assíncrona também
   let usuarios = await pegarUsuarios();
   console.log(usuarios);
-};
-console.log("Async/Await");
+  };
+  console.log("Async/Await");
+  
+  // A função principal é assíncrona, o que significa que ela pode conter instruções que são executadas de forma assíncrona. Isso é útil quando precisamos esperar por algum tipo de processamento ou resposta de uma operação, como uma chamada de API, por exemplo. A palavra-chave "await" é usada para esperar por uma operação assíncrona a ser concluída antes de continuar a execução do código. Nesse caso, a função principal está aguardando o resultado da chamada da função pegarUsuarios antes de imprimir o valor da variável usuários no console.
 
 principal();
 
